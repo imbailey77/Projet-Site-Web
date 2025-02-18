@@ -8,18 +8,23 @@ body {
 }
 
 header {
-    background-color:#4e0c2a  ;
-    padding: 15px;
+    background-color:#440e0a  ;
+    padding: 1em;
+
+    border : 15em;
+
+    
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+   
+    border: 100rem;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 4rem;
+    margin:  4rem;
 }
 
 nav ul li a {
@@ -39,9 +44,9 @@ nav ul li a {
 
 .signup-form {
     margin: 50px auto;
-    width: 50%;
+    width: 30%;
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 45px;
     border-radius: 10px;
 }
 
@@ -63,12 +68,29 @@ input[type="text"] {
 
 .offer {
     font-size: 14px;
-    color: #d4af37;
+    color: #d8c587;
+    
+        animation-duration: 5s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      
+      
 }
 
 .checkbox {
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 
@@ -76,3 +98,4 @@ input[type="text"] {
     height: 6em; /* Taille ajustable */
     width: auto;  /* Garde les proportions */
 }
+
