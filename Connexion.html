@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style-log.css">
     <link rel="stylesheet" href="Boutton.css">
 
+
 </head>
 <body>
     <header>
@@ -20,22 +21,26 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <script defer src="Validation.js" ></script>
     </header>
     
     <main>
+        <div class="container"></div>
+     
         <section class="signup-form">
             <h1>Créer un nouveau compte client</h1>
             <div class="form-container">
                 <h2>Informations personnelles</h2>
-                <form>
+                <form action="/" method="GET">
+                   
                     <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" required>
+                    <input type="text" id="prenom" name="prenom" >
                     
                     <label for="nom">Nom de famille</label>
-                    <input type="text" id="nom" name="nom" required>
+                    <input type="text" id="nom" name="nom" >
                     
                     <label for="email">  Addresse mail </label>
-                    <input type="text" id="email"   email="email" required>  
+                    <input type="text" id="email"  email="email" >  
 
                     <p class="offer">Inscrivez-vous et recevez une routine découverte offerte d'une valeur de CA$000.00 avec votre première commande</p>
                     
