@@ -21,7 +21,24 @@
     </div>
 
     <h1 class="content">Bienvenue sur Lyn&Dv's</h1>
-   
+    <script defer src="interaction-index.js" ></script>
+    <div class="conteneur">
+    <div class="carte">
+        <img src="imgp/Produit3.1.png" alt="Image de base" class="base">
+        <img src="imgp/Produit3.2.png" alt="Image au survol" class="survol">
+    </div>
+
+    <div class="carte">
+        <img src="imgp/Produit4.1.png" alt="Image de base" class="base">
+        <img src="imgp/Produit4.2.png" alt="Image au survol" class="survol">
+    </div>
+
+    <div class="carte">
+        <img src="imgp/Produit5.1.png" alt="Image de base" class="base">
+        <img src="imgp/Produit5.2.png" alt="Image au survol" class="survol">
+    </div>
+</div>
+
 
 </body>
 </html>
