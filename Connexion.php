@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer un compte - Lyn&Dv's</title>
     <link rel="stylesheet" href="style-log.css">
+    <link rel="stylesheet" href="Entete.css">
     <link rel="stylesheet" href="Boutton.css">
 
 
