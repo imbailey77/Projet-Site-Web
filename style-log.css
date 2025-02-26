@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color:#440e0a  ;
+    background-color:#000000  ;
     padding: 1em;
 
     border : 15em;
@@ -95,7 +95,7 @@ input[type="text"] {
 
 
 .logo {
-    height: 6em; /* Taille ajustable */
+    height: 7em; /* Taille ajustable */
     width: auto;  /* Garde les proportions */
 }
 
