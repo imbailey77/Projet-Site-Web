@@ -20,8 +20,7 @@
         </video>
     </div>
 
-    <h1 class="content">Bienvenue sur Lyn&Dv's</h1>
-    <script defer src="interaction-index.js" ></script>
+    
     <div class="conteneur">
     <div class="carte">
         <img src="imgp/Produit3.1.png" alt="Image de base" class="base">

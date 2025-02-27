@@ -53,7 +53,10 @@
     left: 0;
     transition: opacity 0.3s ease;
 }
-//opacity: 0; garde l’image en place mais invisible, ce qui permet une transition fluide.
+
 .carte img.survol {
     opacity: 0;
+}
+.carte img.base {
+    opacity: 1;
 }
