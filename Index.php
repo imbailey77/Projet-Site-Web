@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Lyn&Dv's</title>
-    <link rel="stylesheet" href="style_accueil.css">
-    <link rel="stylesheet" href="Entete.css">
+    <link rel="stylesheet" href="css/style_accueil.css">
+    <link rel="stylesheet" href="css/Entete.css">
     <link rel="icon" type="image/png" href="icone.png">
 </head>
 <body>
