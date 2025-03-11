@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f4c2c2, #e9967a); /* Dégradé rose saumon */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Conteneur des produits */
+.conteneur-produits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 30px; /* Espacement entre les produits */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style des cartes produits */
+.produit {
+    background: rgba(255, 255, 255, 0.2); /* Effet semi-transparent */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Agrandir les images */
+.produit img {
+    width: 200px; /* Augmenter la taille */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Titre des produits */
+.produit h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+/* Description */
+.produit p {
+    font-size: 16px;
+    color: #fbe3e3;
+}
+
+/* Prix */
+.prix {
+    font-weight: bold;
+    color: #ffebcd;
+    font-size: 20px;
+}
+
+/* Effet au survol */
+.produit:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}

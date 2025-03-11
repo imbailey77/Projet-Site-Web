@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include 'Entete.php'; ?> <!-- Header inclus -->
+    <?php include 'Entete.php'; ?> 
 
     <!-- Ajout de la vidéo -->
     <div class="video-container">

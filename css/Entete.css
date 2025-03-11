@@ -2,7 +2,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
     margin: 0;
+ 
 
+}
+.logo {
+    height: 7em; /* Taille ajustable */
+    width: auto;  /* Garde les proportions */
 }
 
 header {
