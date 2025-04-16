@@ -41,7 +41,7 @@
     <?php endforeach; ?>
 </div>
 
-<script src="script.js"></script>
+<script src="Java-script/script.js"></script>
 
 </body>
 </html>

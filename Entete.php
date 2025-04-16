@@ -4,7 +4,7 @@
 <header>
         <nav>
             <ul>
-                <li><img src="Logo2.png" alt="Logo Lyn&Dv's" class="logo"></li>
+                <li><img src="imgp/Logo2.png" alt="Logo Lyn&Dv's" class="logo"></li>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="Produits.php">Produits</a></li>
                 <li><a href="#">Expertise</a></li>
