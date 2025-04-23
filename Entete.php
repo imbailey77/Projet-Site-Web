@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/Entete.css">
 
 
+
+
 <header>
         <nav>
             <ul>
@@ -9,8 +11,9 @@
                 <li><a href="Produits.php">Produits</a></li>
                 <li><a href="#">Expertise</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="Connexion.php">Se Deconnecter</a></li>
-                <li><a href="Pannier.php">Panier</a></li>
+                <li><a href="Connexion.php">Se Connecter</a></li>
+                <li><a href="Panier.php">Panier</a></li>
             </ul>
         </nav>
 </header>
+

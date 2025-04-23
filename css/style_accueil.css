@@ -18,6 +18,12 @@
     object-fit: cover; /* Remplit sans déformation */
 }
 
+/* Contenu au-dessus de la vidéo */
+
+.logo {
+    height: 7em; /* Taille ajustable */
+    width: auto;  /* Garde les proportions */
+}
 
 
 .conteneur {

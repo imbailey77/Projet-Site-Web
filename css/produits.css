@@ -1,10 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #f4c2c2, #e9967a); /* Dégradé rose saumon */
+    background: linear-gradient(to bottom, #000000, #3b0021); /* Dégradé rose saumon */
     color: white;
     text-align: center;
-    margin: 0;
-    padding: 20px;
+
 }
 
 h1 {

@@ -1,14 +1,14 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #986675;
+    background-color: #3f0315;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-
-.signup-form {
+.formulaire-inscription,
+.formulaire-connexion {
     margin: 60px auto;
     width: 30%;
     background: rgba(255, 255, 255, 0.1);
@@ -16,7 +16,7 @@ body {
     border-radius: 10px;
 }
 
-.form-container {
+.conteneur-formulaire {
     text-align: left;
 }
 
@@ -24,7 +24,8 @@ h1, h2 {
     color: #f6eed5;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -32,36 +33,43 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-.offer {
+.texte-offre {
     font-size: 14px;
     color: #d8c587;
-    
-        animation-duration: 5s;
-        animation-name: slidein;
-      }
-      
-      @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 300%;
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      
-      
+    animation-duration: 5s;
+    animation-name: glisser;
 }
 
-.checkbox {
+@keyframes glisser {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+/* Ici pour la checkbox de ma newslettere */
+.case-cochée {
     display: flex;
     align-items: end;
 }
 
-
 .logo {
-    height: 7em; /* Taille ajustable */
-    width: auto;  /* Garde les proportions */
+    height: 7em;
+    width: auto;
 }
 
+.lien-connexion,
+.lien-inscription {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.lien-connexion a,
+.lien-inscription a {
+    color: #f6eed5;
+    text-decoration: underline;
+}

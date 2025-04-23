@@ -1,0 +1,87 @@
+/* From Uiverse.io by vikas7754 */ 
+/* j'ai pris ce code chargement dans le site web Univers ui voici le crédit du chargement : https://uiverse.io/vikas7754/sour-goose-62 */
+/* j'ai changer juste les couleur du cube de base le code propose un cube vert et noir mon j'ai chanegr juste un peu la couleur au niveau du css pour avoir un truc qui marche avec le théme de mon site web */
+.glowing-cube {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: cube-rotate 4s linear infinite;
+  }
+  
+  @keyframes cube-rotate {
+    0% {
+      transform: rotatex(-30deg) rotatey(0deg);
+    }
+  
+    100% {
+      transform: rotatex(-30deg) rotatey(360deg);
+    }
+  }
+  
+  .glowing-cube div {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+  }
+  
+  .glowing-cube div span {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#151515, #660066);
+    transform: rotatey(calc(90deg * var(--i))) translatez(calc(150px / 2));
+  }
+  
+  .glowing-cube .top {
+    position: absolute;
+    inset: 0;
+    background: #222;
+    transform: rotatex(90deg) translatez(calc(150px / 2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--top-font-color);
+    font-size: 7rem;
+  }
+  
+  .glowing-cube .top::before {
+    content: '';
+    position: absolute;
+    background: #660066;
+    inset: 0;
+    transform: translatez(calc(0px - calc(150px + 100px)));
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(58, 134, 255, 0.2),
+      0 0 200px rgba(58, 134, 255, 0.4),
+      0 0 300px #99004C,
+      0 0 400px #99004C,
+      0 0 500px #99004C;
+  }
+  #chargement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.glowing-cube-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texte-chargement {
+    margin-top: 150px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    color: white;
+}

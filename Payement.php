@@ -5,10 +5,12 @@
     <?php include 'Entete.php'; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Panier.css">
+    <link rel="stylesheet" href="css/Payement.css">
     <title>Payement</title>
 </head>
 <body>
+
+
     
    
     <!-- From Uiverse.io by zanina-yassine --> 
@@ -92,5 +94,7 @@
 </form>
 </div>
 </div>
+<?php include 'footer.php'; ?>
+
 </body>
 </html>

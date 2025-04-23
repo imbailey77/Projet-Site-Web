@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Lyn&Dv's</title>
     <link rel="stylesheet" href="css/style_accueil.css">
-    <link rel="stylesheet" href="css/Entete.css">
-    <link rel="icon" type="image/png" href="icone.png">
+    
+
 </head>
 <body>
+<?php include("Chargement.php"); ?>
 
-    <?php include 'Entete.php'; ?> 
+
+    <?php include 'Entete.php'; ?> <!-- Header inclus -->
 
     <!-- Ajout de la vidéo -->
     <div class="video-container">
@@ -19,9 +21,7 @@
            
         </video>
     </div>
-
-</div>
-
-
+    <?php include 'footer.php'; ?>
 </body>
+
 </html>
