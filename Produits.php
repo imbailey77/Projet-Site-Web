@@ -1,3 +1,12 @@
+<?php
+require_once("Auth.php");
+
+if (!Auth::isConnected()) {
+    header("Location: Connexion.php");
+    exit();
+}
+include("Entete.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +15,7 @@
     <title>Nos Produits</title>
     <link rel="stylesheet" href="css/produits.css">
     <link rel="stylesheet" href="css/Bouton.css">
-    <?php include 'Entete.php'; ?> 
+  
 </head>
 <body>
 

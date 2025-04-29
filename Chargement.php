@@ -14,7 +14,7 @@
         <p class="texte-chargement">Chargement en cours...</p>
     </div>
 </div>
-
+<!-- la partie en haut viens directement de UNIVERS.IO UX/UI pour la page chargement j'ai juste copier coller le code pour le css/html du chargement  -->
 <script>
     window.addEventListener("load", function () {
         setTimeout(function () {

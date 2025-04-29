@@ -1,3 +1,4 @@
+<?php include("Entete.php"); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +13,6 @@
 <?php include("Chargement.php"); ?>
 
 
-    <?php include 'Entete.php'; ?> <!-- Header inclus -->
 
     <!-- Ajout de la vidéo -->
     <div class="video-container">

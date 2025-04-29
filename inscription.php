@@ -1,3 +1,4 @@
+<?php include("Entete.php"); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,9 +9,9 @@
     <link rel="stylesheet" href="css/Bouton.css">
 </head>
 <body>
+<!-- Copier et compris d'une video youtube pour la forme du formulaire qui changer quand on clique sur connctez-vous-ici -->
 
 
-<?php include("Entete.php"); ?>
 
 <div class="formulaire-inscription">
     <h1>Créer un nouveau compte client</h1>

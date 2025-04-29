@@ -1,8 +1,16 @@
+<?php
+require_once("Auth.php");
 
+if (!Auth::isConnected()) {
+    header("Location: Connexion.php");
+    exit();
+}
+include("Entete.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'Entete.php'; ?>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Payement.css">

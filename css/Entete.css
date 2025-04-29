@@ -38,3 +38,16 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+.droite {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.droite a, .droite .utilisateur {
+    color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: bold;
+}
