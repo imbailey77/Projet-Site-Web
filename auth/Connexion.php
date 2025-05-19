@@ -1,17 +1,26 @@
-<?php require_once("Auth.php");
+<?php
+require_once("Auth.php");
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST["mail"] ?? '';
-    $mdp = $_POST["mdp"] ?? '';
+    // Sécurisation des entrées
+    $email = filter_input(INPUT_POST, "mail", FILTER_VALIDATE_EMAIL);
+    $mdp = filter_input(INPUT_POST, "mdp", FILTER_UNSAFE_RAW);
+    $mdp = trim($mdp);
 
-    if (Auth::login($email, $mdp)) {
-        header("Location: Produits.php");
-        exit();
+    if ($email && !empty($mdp)) {
+        if (Auth::connexion1($email, $mdp)) {
+            header("Location: Double-auth.php");
+            exit();
+        } else {
+            $message = "Email ou mot de passe incorrect.";
+            file_put_contents('/home/moumeneh25techin/logs/acces-refuses.log', date("Y-m-d H:i:s") . " - Échec de connexion pour le client  mot de passe ou mail non valide$email\n", FILE_APPEND);
+        }
     } else {
-        $message = "Email ou mot de passe incorrect.";
+        $message = "Veuillez entrer une adresse courriel valide et un mot de passe.";
     }
 }
+
 include("Entete.php");
 ?>
 <!DOCTYPE html>
@@ -25,11 +34,12 @@ include("Entete.php");
 </head>
 <body>
 
-
-
-
 <div class="formulaire-connexion">
     <h1>Connexion à votre compte</h1>
+
+    <?php if (!empty($message)): ?>
+        <p style="color:red"><?= htmlspecialchars($message) ?></p>
+    <?php endif; ?>
 
     <div class="conteneur-formulaire">
         <form action="" method="post">
@@ -46,8 +56,6 @@ include("Entete.php");
     <p class="lien-secondaire">Pas encore de compte ? <a href="inscription.php">Inscrivez-vous ici</a></p>
 </div>
 
-
 <?php include 'footer.php'; ?>
-
 </body>
 </html>

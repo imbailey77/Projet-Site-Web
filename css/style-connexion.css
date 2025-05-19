@@ -73,3 +73,10 @@ input[type="password"] {
     color: #f6eed5;
     text-decoration: underline;
 }
+
+.erreur {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    display: block;
+}

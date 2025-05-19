@@ -1,7 +1,7 @@
 <?php
 require_once("Auth.php");
 
-if (!Auth::isConnected()) {
+if (!Auth::connecter()) {
     header("Location: Connexion.php");
     exit();
 }

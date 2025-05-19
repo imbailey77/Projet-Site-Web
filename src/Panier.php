@@ -1,7 +1,13 @@
 <?php
 require_once("Auth.php");
-
-if (!Auth::isConnected()) {
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['supprimer'])) {
+    $index = $_POST['supprimer'];
+    if (isset($_SESSION['panier'][$index])) {
+        unset($_SESSION['panier'][$index]);
+        $_SESSION['panier'] = array_values($_SESSION['panier']); 
+    }
+}
+if (!Auth::connecter ()) {
     header("Location: Connexion.php");
     exit();
 }
@@ -65,3 +71,4 @@ include("Entete.php");
 <script src="Java-script/Supprimer_panier.js"></script>
 </body>
 </html>
+

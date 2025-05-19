@@ -9,7 +9,8 @@ Session::start();
         <ul>
             <li><img src="imgp/Logo2.png" alt="Logo Lyn&Dv's" class="logo"></li>
             <li><a href="index.php">Accueil</a></li>
-            <li><a href="Produits.php">Produits</a></li>
+            <li><a href="Produits.php">Cosmétique</a></li>
+          
             <li><a href="Expertise.php">Expertise</a></li>
             <li><a href="https://github.com/imbailey77">Contact</a></li>
         <div class="droite">
